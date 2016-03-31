@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- links -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+	<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-2.2.2.js" integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	
+	
+</head>
+
+<body>
+	<div id="findLocation">
+		<form>
+			Enter City or Zipcode:
+			<input type="text" id="locationInput"></input>
+			<button type="submit" id="submit">Search</button>
+		</form>
+	</div>
+	
+	<div id="weather">
+		<div id="info">
+		<button id="manualLocation"><strong><em>i</em></strong></button>
+		</div>
+		<div id="left">
+			<img src="http://openweathermap.org/img/w/10d.png" id="icon">
+			<p id="description">Cloudy</p>
+			<p id="city">Seaville</p>
+		</div>
+		<div id="right">
+			<p id="temp-lg"><span id="current">0</span>&deg</p>
+			<p>Low: <span id="low">0</span>&deg High: <span id="high">0</span>&deg</p>
+		</div>
+		<div id="bottom-left">
+			<p>Sunrise: <span id="sunrise">7:55</span></p>
+			<p>Sunset: <span id="sunset">7:55</span></p>
+		</div>
+		<div id="bottom-right">
+			<p>Humidity: <span id="humidity">0</span>%</p>
+			<p>Wind: <span id="speed">0</span> MPH <span id="direction">SW</span></p>
+		</div>
+	</div>
+</body>
+</html>
